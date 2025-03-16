@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Data_Science_Project</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7510,12 +7510,35 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Adam-Ledet">Adam Ledet<a class="anchor-link" href="#Adam-Ledet">¶</a></h1><p><strong>Github Page</strong>: <a href="https://github.com/adamledet/itds-project-2025">https://github.com/adamledet/itds-project-2025</a></p>
+<p><strong>Website</strong>: <a href="https://adamledet.github.io/itds-project-2025/">https://adamledet.github.io/itds-project-2025/</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>My first few code blocks set everything up to properly manipulate the datasets. Before doing anything, I need to get my API key to use Kaggle as this is my primary dataset source. I upload the file from my computer each time rather than linking it to my Google Drive.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Install Kaggle and upload your API key.</span>
@@ -7725,7 +7748,7 @@ scope.google.colab._files = {
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'kaggle.json': b'{"username":"adamledet","key":"9f5e44bbd95759f9049ca793c04da24f"}'}</pre>
 </div>
@@ -7737,7 +7760,7 @@ scope.google.colab._files = {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Make a Kaggle directory and give permission to edit it.</span>
@@ -7785,12 +7808,23 @@ rzgiza/pokdex-for-all-1025-pokemon-w-text-description                  Pokédex 
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Next I actually get the datasets I'll be using. These datasets are <a href="https://www.kaggle.com/datasets/joebeachcapital/top-1000-steam-games">https://www.kaggle.com/datasets/joebeachcapital/top-1000-steam-games</a> and <a href="https://www.kaggle.com/datasets/trolukovich/steam-games-complete-dataset">https://www.kaggle.com/datasets/trolukovich/steam-games-complete-dataset</a>; the latter of which is more robust but somewhat outdated while the former is more recent but has several flaws. The older dataset I call <strong>df_Old</strong> while I call the newer dataset <strong>df_New</strong>.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Get two datasets</span>
@@ -7842,10 +7876,11 @@ Archive:  /content/steam-games-complete-dataset.zip
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -7856,7 +7891,7 @@ Archive:  /content/steam-games-complete-dataset.zip
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df_New</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"/content/steamNew/93182_steam_games.csv"</span><span class="p">)</span>
@@ -7879,7 +7914,7 @@ Archive:  /content/steam-games-complete-dataset.zip
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div class="colab-df-container" id="df-3ba4f251-7da1-45ce-8024-d991f0b6b616">
 <div>
@@ -8251,7 +8286,7 @@ Archive:  /content/steam-games-complete-dataset.zip
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">df_Old</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"/content/steamOld/steam_games.csv"</span><span class="p">)</span>
@@ -8266,7 +8301,7 @@ Archive:  /content/steam-games-complete-dataset.zip
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div class="colab-df-container" id="df-be8db9d7-d2da-488a-adef-ff6714bc3a07">
 <div>
@@ -8622,6 +8657,623 @@ Archive:  /content/steam-games-complete-dataset.zip
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>At this point I can actually start manipulating my data and getting results. The first thing I want to do is look through my datasets and make a correlation matrix with all my integers. This is an initial step to test my variables and see if there are any surprising results. My initial expectation was that there would be few correlations between the integer data, and any that do appear will be by product of chance.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Get correlation matrix for integer values and return matrix only with values greater than the threshold (and excluding self, which would have a correlation of 1)</span>
+<span class="c1"># Threshold currently set at 0.4</span>
+<span class="n">thresh</span> <span class="o">=</span> <span class="mf">0.4</span>
+<span class="n">df_New_CorrMatrix</span> <span class="o">=</span> <span class="n">df_New</span><span class="p">[[</span><span class="s2">"Peak CCU"</span><span class="p">,</span> <span class="s2">"Required age"</span><span class="p">,</span> <span class="s2">"Price"</span><span class="p">,</span> <span class="s2">"DLC count"</span><span class="p">,</span> <span class="s2">"Metacritic score"</span><span class="p">,</span> <span class="s2">"User score"</span><span class="p">,</span> <span class="s2">"Positive"</span><span class="p">,</span> <span class="s2">"Negative"</span><span class="p">,</span> <span class="s2">"Score rank"</span><span class="p">,</span> <span class="s2">"Achievements"</span><span class="p">,</span> <span class="s2">"Recommendations"</span><span class="p">,</span> <span class="s2">"Average playtime forever"</span><span class="p">,</span> <span class="s2">"Average playtime two weeks"</span><span class="p">,</span> <span class="s2">"Median playtime two weeks"</span><span class="p">]]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<span class="n">df_New_CorrMatrix</span><span class="p">[</span><span class="n">df_New_CorrMatrix</span><span class="p">[</span><span class="n">df_New_CorrMatrix</span><span class="o">&gt;</span><span class="n">thresh</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div class="colab-df-container" id="df-ee368f18-0a99-4b95-bc31-e91cfbd6f7dc">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Peak CCU</th>
+<th>Required age</th>
+<th>Price</th>
+<th>DLC count</th>
+<th>Metacritic score</th>
+<th>User score</th>
+<th>Positive</th>
+<th>Negative</th>
+<th>Score rank</th>
+<th>Achievements</th>
+<th>Recommendations</th>
+<th>Average playtime forever</th>
+<th>Average playtime two weeks</th>
+<th>Median playtime two weeks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Peak CCU</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.715739</td>
+<td>0.54617</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Required age</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Price</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>DLC count</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Metacritic score</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>User score</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.842230</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Positive</th>
+<td>0.715739</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.73174</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Negative</th>
+<td>0.546170</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.731740</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Score rank</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.84223</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.590452</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Achievements</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.590452</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Recommendations</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Average playtime forever</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Average playtime two weeks</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Median playtime two weeks</th>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="colab-df-buttons">
+<div class="colab-df-container">
+<button class="colab-df-convert" onclick="convertToInteractive('df-ee368f18-0a99-4b95-bc31-e91cfbd6f7dc')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
+<path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
+</svg>
+</button>
+<style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+<script>
+      const buttonEl =
+        document.querySelector('#df-ee368f18-0a99-4b95-bc31-e91cfbd6f7dc button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-ee368f18-0a99-4b95-bc31-e91cfbd6f7dc');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+</div>
+<div id="df-6ed3d700-6cfb-43a8-88d7-73dbf4e8ead5">
+<button class="colab-df-quickchart" onclick="quickchart('df-6ed3d700-6cfb-43a8-88d7-73dbf4e8ead5')" style="display:none;" title="Suggest charts">
+<svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
+</g>
+</svg>
+</button>
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+<script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-6ed3d700-6cfb-43a8-88d7-73dbf4e8ead5 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In the New dataset, there are strongest correlations between:</p>
+<ul>
+<li>Peak CCU (Peak Concurrent Users) and Positive / Negative reviews</li>
+<li>Positive Reviews and Negative reviews</li>
+<li>Score rank and number of achievements</li>
+</ul>
+<p>It makes logical sense for there to be a correlation between positive and negative reviews with well-liked games receiving more positive and fewer negative reviews. The same is true for a popular game to have more players while more negatively reviewed games have fewer peak players. Sadly, the dataset doesn't have working data for the average playtime as these values would be interesting to see. Let's look at our other dataset next.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1">#df_Old["original_price"] = df_Old["original_price"].replace('[\$]', '', regex=True)</span>
+<span class="c1">#df_Old["original_price"] = df_Old["original_price"].replace("Free",0)</span>
+<span class="c1">#df_Old["original_price"] = df_Old["original_price"].replace("Free to play",0)</span>
+<span class="c1">#df_Old["original_price"] = df_Old["original_price"].replace("Free to Play",0)</span>
+<span class="c1">#df_Old["original_price"] = df_Old["original_price"].replace("Free To Play",0).astype(float)</span>
+<span class="c1">#df_Old["original_price"]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-67-d55e2b569097&gt;</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> df_Old<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">"original_price"</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> df_Old<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">"original_price"</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>replace<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Free to play"</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> df_Old<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">"original_price"</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> df_Old<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">"original_price"</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>replace<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Free to Play"</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg"> </span>df_Old<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">"original_price"</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> df_Old<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">"original_price"</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>replace<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Free To Play"</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>float<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> df_Old<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">"original_price"</span><span class="ansi-blue-fg">]</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/pandas/core/generic.py</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, copy, errors)</span>
+<span class="ansi-green-intense-fg ansi-bold">   6641</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   6642</span>             <span class="ansi-red-fg"># else, only a single dtype is given</span>
+<span class="ansi-green-fg">-&gt; 6643</span><span class="ansi-red-fg">             </span>new_data <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_mgr<span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>dtype<span class="ansi-blue-fg">=</span>dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>copy<span class="ansi-blue-fg">,</span> errors<span class="ansi-blue-fg">=</span>errors<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   6644</span>             res <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>_constructor_from_mgr<span class="ansi-blue-fg">(</span>new_data<span class="ansi-blue-fg">,</span> axes<span class="ansi-blue-fg">=</span>new_data<span class="ansi-blue-fg">.</span>axes<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   6645</span>             <span class="ansi-green-fg">return</span> res<span class="ansi-blue-fg">.</span>__finalize__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> method<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">"astype"</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/pandas/core/internals/managers.py</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, copy, errors)</span>
+<span class="ansi-green-intense-fg ansi-bold">    428</span>             copy <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">False</span>
+<span class="ansi-green-intense-fg ansi-bold">    429</span> 
+<span class="ansi-green-fg">--&gt; 430</span><span class="ansi-red-fg">         return self.apply(
+</span><span class="ansi-green-intense-fg ansi-bold">    431</span>             <span class="ansi-blue-fg">"astype"</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">    432</span>             dtype<span class="ansi-blue-fg">=</span>dtype<span class="ansi-blue-fg">,</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/pandas/core/internals/managers.py</span> in <span class="ansi-cyan-fg">apply</span><span class="ansi-blue-fg">(self, f, align_keys, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    361</span>                 applied <span class="ansi-blue-fg">=</span> b<span class="ansi-blue-fg">.</span>apply<span class="ansi-blue-fg">(</span>f<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    362</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 363</span><span class="ansi-red-fg">                 </span>applied <span class="ansi-blue-fg">=</span> getattr<span class="ansi-blue-fg">(</span>b<span class="ansi-blue-fg">,</span> f<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    364</span>             result_blocks <span class="ansi-blue-fg">=</span> extend_blocks<span class="ansi-blue-fg">(</span>applied<span class="ansi-blue-fg">,</span> result_blocks<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    365</span> 
+
+<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/pandas/core/internals/blocks.py</span> in <span class="ansi-cyan-fg">astype</span><span class="ansi-blue-fg">(self, dtype, copy, errors, using_cow, squeeze)</span>
+<span class="ansi-green-intense-fg ansi-bold">    756</span>             values <span class="ansi-blue-fg">=</span> values<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">]</span>  <span class="ansi-red-fg"># type: ignore[call-overload]</span>
+<span class="ansi-green-intense-fg ansi-bold">    757</span> 
+<span class="ansi-green-fg">--&gt; 758</span><span class="ansi-red-fg">         </span>new_values <span class="ansi-blue-fg">=</span> astype_array_safe<span class="ansi-blue-fg">(</span>values<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>copy<span class="ansi-blue-fg">,</span> errors<span class="ansi-blue-fg">=</span>errors<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    759</span> 
+<span class="ansi-green-intense-fg ansi-bold">    760</span>         new_values <span class="ansi-blue-fg">=</span> maybe_coerce_values<span class="ansi-blue-fg">(</span>new_values<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/pandas/core/dtypes/astype.py</span> in <span class="ansi-cyan-fg">astype_array_safe</span><span class="ansi-blue-fg">(values, dtype, copy, errors)</span>
+<span class="ansi-green-intense-fg ansi-bold">    235</span> 
+<span class="ansi-green-intense-fg ansi-bold">    236</span>     <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 237</span><span class="ansi-red-fg">         </span>new_values <span class="ansi-blue-fg">=</span> astype_array<span class="ansi-blue-fg">(</span>values<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>copy<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    238</span>     <span class="ansi-green-fg">except</span> <span class="ansi-blue-fg">(</span>ValueError<span class="ansi-blue-fg">,</span> TypeError<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    239</span>         <span class="ansi-red-fg"># e.g. _astype_nansafe can fail on object-dtype of strings</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/pandas/core/dtypes/astype.py</span> in <span class="ansi-cyan-fg">astype_array</span><span class="ansi-blue-fg">(values, dtype, copy)</span>
+<span class="ansi-green-intense-fg ansi-bold">    180</span> 
+<span class="ansi-green-intense-fg ansi-bold">    181</span>     <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">--&gt; 182</span><span class="ansi-red-fg">         </span>values <span class="ansi-blue-fg">=</span> _astype_nansafe<span class="ansi-blue-fg">(</span>values<span class="ansi-blue-fg">,</span> dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>copy<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    183</span> 
+<span class="ansi-green-intense-fg ansi-bold">    184</span>     <span class="ansi-red-fg"># in pandas we don't store numpy str dtypes, so convert to object</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.11/dist-packages/pandas/core/dtypes/astype.py</span> in <span class="ansi-cyan-fg">_astype_nansafe</span><span class="ansi-blue-fg">(arr, dtype, copy, skipna)</span>
+<span class="ansi-green-intense-fg ansi-bold">    131</span>     <span class="ansi-green-fg">if</span> copy <span class="ansi-green-fg">or</span> arr<span class="ansi-blue-fg">.</span>dtype <span class="ansi-blue-fg">==</span> object <span class="ansi-green-fg">or</span> dtype <span class="ansi-blue-fg">==</span> object<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">    132</span>         <span class="ansi-red-fg"># Explicit copy, or required since NumPy can't view from / to object.</span>
+<span class="ansi-green-fg">--&gt; 133</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> arr<span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    134</span> 
+<span class="ansi-green-intense-fg ansi-bold">    135</span>     <span class="ansi-green-fg">return</span> arr<span class="ansi-blue-fg">.</span>astype<span class="ansi-blue-fg">(</span>dtype<span class="ansi-blue-fg">,</span> copy<span class="ansi-blue-fg">=</span>copy<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">ValueError</span>: could not convert string to float: 'Demo Middle-earth™: Shadow of War™'</pre>
 </div>
 </div>
 </div>
