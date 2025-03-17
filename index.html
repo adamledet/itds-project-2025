@@ -9936,6 +9936,748 @@ A variable that IS available is the date in which the game is published, but thi
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Reset the index</span>
+<span class="n">df_New</span> <span class="o">=</span> <span class="n">df_New</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div class="colab-df-container" id="df-6b1c4b5c-2f6d-486f-a534-992320ee82d6">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>AppID</th>
+<th>Name</th>
+<th>Release date</th>
+<th>Estimated owners</th>
+<th>Peak CCU</th>
+<th>Required age</th>
+<th>Price</th>
+<th>DLC count</th>
+<th>About the game</th>
+<th>Supported languages</th>
+<th>...</th>
+<th>Average playtime two weeks</th>
+<th>Median playtime forever</th>
+<th>Median playtime two weeks</th>
+<th>Developers</th>
+<th>Publishers</th>
+<th>Categories</th>
+<th>Genres</th>
+<th>Tags</th>
+<th>Screenshots</th>
+<th>Movies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1424640</td>
+<td>余烬</td>
+<td>Oct</td>
+<td>20000 - 50000</td>
+<td>0</td>
+<td>0</td>
+<td>3.99</td>
+<td>0</td>
+<td>'Ashes of war' is an anti war theme adventure ...</td>
+<td>['Simplified Chinese']</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>宁夏华夏西部影视城有限公司</td>
+<td>宁夏华夏西部影视城有限公司</td>
+<td>Single-player,Family Sharing</td>
+<td>Adventure,Casual,Indie,RPG</td>
+<td>Sokoban,RPG,Puzzle-Platformer,Exploration,Adve...</td>
+<td>https://shared.akamai.steamstatic.com/store_it...</td>
+<td>http://video.akamai.steamstatic.com/store_trai...</td>
+</tr>
+<tr>
+<th>1</th>
+<td>402890</td>
+<td>Nyctophilia</td>
+<td>Sep</td>
+<td>50000 - 100000</td>
+<td>0</td>
+<td>0</td>
+<td>0.00</td>
+<td>0</td>
+<td>NYCTOPHILIA Nyctophilia is an 2D psychological...</td>
+<td>['English', 'Russian']</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>Cat In A Jar Games</td>
+<td>Cat In A Jar Games</td>
+<td>Single-player</td>
+<td>Adventure,Free To Play,Indie</td>
+<td>Free to Play,Indie,Adventure,Horror,2D,Pixel G...</td>
+<td>https://shared.akamai.steamstatic.com/store_it...</td>
+<td>http://video.akamai.steamstatic.com/store_trai...</td>
+</tr>
+<tr>
+<th>2</th>
+<td>1151740</td>
+<td>Prison Princess</td>
+<td>Apr</td>
+<td>0 - 20000</td>
+<td>0</td>
+<td>0</td>
+<td>19.99</td>
+<td>0</td>
+<td>ABOUT Now nothing more than a phantom, can the...</td>
+<td>['English', 'Simplified Chinese', 'Traditional...</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>qureate</td>
+<td>qureate</td>
+<td>Single-player,Steam Achievements,Full controll...</td>
+<td>Adventure,Indie</td>
+<td>Sexual Content,Adventure,Indie,Nudity,Anime,Ma...</td>
+<td>https://shared.akamai.steamstatic.com/store_it...</td>
+<td>http://video.akamai.steamstatic.com/store_trai...</td>
+</tr>
+<tr>
+<th>3</th>
+<td>875530</td>
+<td>Dead In Time</td>
+<td>Oct</td>
+<td>0 - 20000</td>
+<td>0</td>
+<td>0</td>
+<td>7.99</td>
+<td>0</td>
+<td>Is a hardcore action with a non-trivial level ...</td>
+<td>['English', 'Russian']</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>Zelenov Artem</td>
+<td>Zelenov Artem</td>
+<td>Single-player,Full controller support,Family S...</td>
+<td>Action,Indie</td>
+<td>Action,Indie,Souls-like,Fantasy,Early Access,R...</td>
+<td>https://shared.akamai.steamstatic.com/store_it...</td>
+<td>http://video.akamai.steamstatic.com/store_trai...</td>
+</tr>
+<tr>
+<th>4</th>
+<td>1835360</td>
+<td>Panacle: Back To Wild</td>
+<td>Mar</td>
+<td>0 - 20000</td>
+<td>2</td>
+<td>0</td>
+<td>3.99</td>
+<td>0</td>
+<td>Panacle: Back to the Wild is a indie card game...</td>
+<td>['English', 'Japanese', 'Simplified Chinese', ...</td>
+<td>...</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>渡鸦游戏</td>
+<td>渡鸦游戏,电钮组</td>
+<td>Single-player,Family Sharing</td>
+<td>Indie,Strategy,Early Access</td>
+<td>Trading Card Game,Turn-Based Strategy,Lore-Ric...</td>
+<td>https://shared.akamai.steamstatic.com/store_it...</td>
+<td>http://video.akamai.steamstatic.com/store_trai...</td>
+</tr>
+</tbody>
+</table>
+<p>5 rows × 39 columns</p>
+</div>
+<div class="colab-df-buttons">
+<div class="colab-df-container">
+<button class="colab-df-convert" onclick="convertToInteractive('df-6b1c4b5c-2f6d-486f-a534-992320ee82d6')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
+<path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
+</svg>
+</button>
+<style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+<script>
+      const buttonEl =
+        document.querySelector('#df-6b1c4b5c-2f6d-486f-a534-992320ee82d6 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-6b1c4b5c-2f6d-486f-a534-992320ee82d6');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+</div>
+<div id="df-a70342b7-161f-4962-9e27-a1712a1cee81">
+<button class="colab-df-quickchart" onclick="quickchart('df-a70342b7-161f-4962-9e27-a1712a1cee81')" style="display:none;" title="Suggest charts">
+<svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
+</g>
+</svg>
+</button>
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+<script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-a70342b7-161f-4962-9e27-a1712a1cee81 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Pos:-Negative-Review-Rate">Pos: Negative Review Rate<a class="anchor-link" href="#Pos:-Negative-Review-Rate">¶</a></h2><p>By counting the number of positive and negative reviews, I can create a summary statistic of the rate of positive to negative reviews each game recieves. This average turns out to be ~1.6 positive reviews for every negative review. A game, then, that recieves more than 5.5 positive reviews to negative could be considered 'well-liked.'</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Get the ratio of Positive to Negative Reviews for each game</span>
+<span class="n">df_New</span><span class="p">[</span><span class="s2">"Review Average"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_New</span><span class="p">[</span><span class="s2">"Positive"</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="n">df_New</span><span class="p">[</span><span class="s2">"Negative"</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="c1"># Nagative value is currently offset (and therefore not correct) to prevent infinite value when dividing by 0. Will fix later.</span>
+<span class="n">df_New</span><span class="p">[</span><span class="s2">"Review Average"</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[87]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Review Average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>0.625000</td>
+</tr>
+<tr>
+<th>1</th>
+<td>1.831776</td>
+</tr>
+<tr>
+<th>2</th>
+<td>5.617021</td>
+</tr>
+<tr>
+<th>3</th>
+<td>1.750000</td>
+</tr>
+<tr>
+<th>4</th>
+<td>1.666667</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+</tr>
+<tr>
+<th>93177</th>
+<td>0.000000</td>
+</tr>
+<tr>
+<th>93178</th>
+<td>0.000000</td>
+</tr>
+<tr>
+<th>93179</th>
+<td>0.000000</td>
+</tr>
+<tr>
+<th>93180</th>
+<td>0.000000</td>
+</tr>
+<tr>
+<th>93181</th>
+<td>0.000000</td>
+</tr>
+</tbody>
+</table>
+<p>93182 rows × 1 columns</p>
+</div><br/><label><b>dtype:</b> float64</label>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">df_New</span><span class="p">[</span><span class="n">df_New</span><span class="p">[</span><span class="s2">"Review Average"</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">][</span><span class="s2">"Review Average"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="c1"># Mean of the data. Game that is liked 'average.'</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[88]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>5.501686117655182</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">df_New</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_New</span><span class="p">[</span><span class="s2">"Review Average"</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[89]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>8491</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>AppID</th>
+<td>1035990</td>
+</tr>
+<tr>
+<th>Name</th>
+<td>Dialtown: Phone Dating Sim</td>
+</tr>
+<tr>
+<th>Release date</th>
+<td>Feb</td>
+</tr>
+<tr>
+<th>Estimated owners</th>
+<td>50000 - 100000</td>
+</tr>
+<tr>
+<th>Peak CCU</th>
+<td>6</td>
+</tr>
+<tr>
+<th>Required age</th>
+<td>0</td>
+</tr>
+<tr>
+<th>Price</th>
+<td>7.99</td>
+</tr>
+<tr>
+<th>DLC count</th>
+<td>1</td>
+</tr>
+<tr>
+<th>About the game</th>
+<td>Ever wanted to date a Phone? Excuse me?! Shame...</td>
+</tr>
+<tr>
+<th>Supported languages</th>
+<td>['English']</td>
+</tr>
+<tr>
+<th>Full audio languages</th>
+<td>[]</td>
+</tr>
+<tr>
+<th>Reviews</th>
+<td>“Its aesthetic is well executed. Its flavor of...</td>
+</tr>
+<tr>
+<th>Header image</th>
+<td>https://shared.akamai.steamstatic.com/store_it...</td>
+</tr>
+<tr>
+<th>Website</th>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Support url</th>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Support email</th>
+<td>Dialtownsteam@gmail.com</td>
+</tr>
+<tr>
+<th>Windows</th>
+<td>True</td>
+</tr>
+<tr>
+<th>Mac</th>
+<td>False</td>
+</tr>
+<tr>
+<th>Linux</th>
+<td>False</td>
+</tr>
+<tr>
+<th>Metacritic score</th>
+<td>0</td>
+</tr>
+<tr>
+<th>Metacritic url</th>
+<td>NaN</td>
+</tr>
+<tr>
+<th>User score</th>
+<td>0</td>
+</tr>
+<tr>
+<th>Positive</th>
+<td>1662</td>
+</tr>
+<tr>
+<th>Negative</th>
+<td>12</td>
+</tr>
+<tr>
+<th>Score rank</th>
+<td>NaN</td>
+</tr>
+<tr>
+<th>Achievements</th>
+<td>10</td>
+</tr>
+<tr>
+<th>Recommendations</th>
+<td>1532</td>
+</tr>
+<tr>
+<th>Notes</th>
+<td>There's references to genitalia, cryptid-repro...</td>
+</tr>
+<tr>
+<th>Average playtime forever</th>
+<td>0</td>
+</tr>
+<tr>
+<th>Average playtime two weeks</th>
+<td>0</td>
+</tr>
+<tr>
+<th>Median playtime forever</th>
+<td>0</td>
+</tr>
+<tr>
+<th>Median playtime two weeks</th>
+<td>0</td>
+</tr>
+<tr>
+<th>Developers</th>
+<td>DirectDoggo</td>
+</tr>
+<tr>
+<th>Publishers</th>
+<td>DirectDoggo</td>
+</tr>
+<tr>
+<th>Categories</th>
+<td>Single-player,Steam Achievements,Steam Trading...</td>
+</tr>
+<tr>
+<th>Genres</th>
+<td>Casual,Indie</td>
+</tr>
+<tr>
+<th>Tags</th>
+<td>Indie,Casual,Dating Sim,Comedy,Psychological H...</td>
+</tr>
+<tr>
+<th>Screenshots</th>
+<td>https://shared.akamai.steamstatic.com/store_it...</td>
+</tr>
+<tr>
+<th>Movies</th>
+<td>http://video.akamai.steamstatic.com/store_trai...</td>
+</tr>
+<tr>
+<th>Review Average</th>
+<td>127.846154</td>
+</tr>
+</tbody>
+</table>
+</div><br/><label><b>dtype:</b> object</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Dialtone appears to have the greatest ratio of players that leave positive reviews to negative reviews with players 127x more likely to leave a positive than negative review..!</p>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -9945,6 +10687,7 @@ A variable that IS available is the date in which the game is published, but thi
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Next-Steps">Next Steps<a class="anchor-link" href="#Next-Steps">¶</a></h2><p>With my initial hypothesis 'out the window' as it were, perhaps I can draw correlations to other data or use other datasets. I still have my df_Old which contains information about price. I also found a new dataset (placeholder called 'd3') which contains information about recent games' revenue.</p>
 <p>I may also be able to see patterns between different publishers or draw lines between the correlations I do find (such as between positive and negative reviews and Peak CCU).</p>
+<p>I can also draw some relative of the number of games above or below the mean of my created 'Review Average' variable and see if a great number of outliers are skewing the mean.</p>
 <p>For now, I fear I'm still in the 'aimless wandering' phase of trying to figure out what I can prove or point to as relating to a successful game. The only thing I can say for now is that player sentiment does not appear to be based on a game's release date.</p>
 </div>
 </div>
